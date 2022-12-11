@@ -15,14 +15,15 @@ public class Main {
         Student student7 = new Student("Masha", 102, 2, 2);
 
         List<Student> students = new ArrayList<>(Arrays.asList(student1, student2, student3, student4, student5, student6, student7));
-
         Iterator<Student> iterator = students.listIterator();
         while (iterator.hasNext()) {
             Student i = iterator.next();
             if (i.getGrades() < 3) {
                 iterator.remove();
-            } else i.setCourse(i.getCourse()+1);
-
+            } else i.setCourse(i.getCourse() + 1);
+        }
+        for (Student i : students) {
+            System.out.println(i);
         }
 
 

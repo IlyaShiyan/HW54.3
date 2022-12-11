@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Student {
     private String name;
     private int group;
@@ -12,7 +14,7 @@ public class Student {
     }
 
     @Override
-    public String toString(){return String.valueOf(course);
+    public String toString(){return String.valueOf(name);
     }
 
     public String getName() {
@@ -45,5 +47,12 @@ public class Student {
 
     public void setGrades(int grades) {
         this.grades = grades;
+    }
+
+    public void printStudents(List<Student> students, int course){
+        for (Student i: students) {
+            if (this.course == course)
+        System.out.println(name);
+        }
     }
 }
