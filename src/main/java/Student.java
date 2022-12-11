@@ -49,10 +49,5 @@ public class Student {
         this.grades = grades;
     }
 
-    public void printStudents(List<Student> students, int course){
-        for (Student i: students) {
-            if (this.course == course)
-        System.out.println(name);
-        }
-    }
+
 }

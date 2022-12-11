@@ -22,10 +22,13 @@ public class Main {
                 iterator.remove();
             } else i.setCourse(i.getCourse() + 1);
         }
-        for (Student i : students) {
-            System.out.println(i);
+
+        Main.printStudent(students,2);
+    }
+    public static void printStudent(List<Student> students, int course){
+        for (Student i: students) {
+            if (course == i.getCourse())
+                System.out.println(i.getName());
         }
-
-
     }
 }
