@@ -24,10 +24,7 @@ public class Main {
             } else i.setCourse(i.getCourse()+1);
 
         }
-        for (Student i : students) {
-            System.out.println(i);
 
-        }
 
     }
 }
